@@ -1,0 +1,274 @@
+{
+  "type": "random_forest",
+  "trained": true,
+  "accuracy": 100.0,
+  "total_samples": 10,
+  "feature_names": [
+    "offer_percentage",
+    "customer_total_orders",
+    "customer_total_spent",
+    "product_stock",
+    "product_days_listed",
+    "product_total_sales",
+    "active_negotiations",
+    "customer_success_rate",
+    "customer_avg_discount",
+    "round_number",
+    "category_id",
+    "original_price",
+    "min_price_percentage"
+  ],
+  "model": {
+    "n_trees": 15,
+    "trees": [
+      {
+        "feature": 0,
+        "threshold": 86.11500000000001,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "feature": 0,
+          "threshold": 90.0,
+          "left": {
+            "value": 0
+          },
+          "right": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 87.225,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "feature": 0,
+          "threshold": 90.0,
+          "left": {
+            "value": 0
+          },
+          "right": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 86.11500000000001,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "feature": 0,
+          "threshold": 88.89,
+          "left": {
+            "value": 0
+          },
+          "right": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 90.0,
+        "left": {
+          "feature": 0,
+          "threshold": 86.11500000000001,
+          "left": {
+            "value": -1
+          },
+          "right": {
+            "value": 0
+          }
+        },
+        "right": {
+          "value": 1
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 89.445,
+        "left": {
+          "feature": 0,
+          "threshold": 86.67,
+          "left": {
+            "value": -1
+          },
+          "right": {
+            "value": 0
+          }
+        },
+        "right": {
+          "value": 1
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 87.225,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "feature": 0,
+          "threshold": 90.0,
+          "left": {
+            "value": 0
+          },
+          "right": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "feature": 9,
+        "threshold": 2.5,
+        "left": {
+          "feature": 0,
+          "threshold": 88.33500000000001,
+          "left": {
+            "value": -1
+          },
+          "right": {
+            "value": 1
+          }
+        },
+        "right": {
+          "value": 0
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 86.66499999999999,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "feature": 0,
+          "threshold": 90.0,
+          "left": {
+            "value": 0
+          },
+          "right": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 85.555,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "feature": 0,
+          "threshold": 90.0,
+          "left": {
+            "value": 0
+          },
+          "right": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 86.67,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "feature": 0,
+          "threshold": 90.0,
+          "left": {
+            "value": 0
+          },
+          "right": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "feature": 9,
+        "threshold": 2.5,
+        "left": {
+          "feature": 0,
+          "threshold": 88.33500000000001,
+          "left": {
+            "value": -1
+          },
+          "right": {
+            "value": 1
+          }
+        },
+        "right": {
+          "value": 0
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 86.11500000000001,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "feature": 0,
+          "threshold": 90.0,
+          "left": {
+            "value": 0
+          },
+          "right": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 86.67,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "feature": 0,
+          "threshold": 90.0,
+          "left": {
+            "value": 0
+          },
+          "right": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 86.11500000000001,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "feature": 0,
+          "threshold": 90.0,
+          "left": {
+            "value": 0
+          },
+          "right": {
+            "value": 1
+          }
+        }
+      },
+      {
+        "feature": 0,
+        "threshold": 86.11500000000001,
+        "left": {
+          "value": -1
+        },
+        "right": {
+          "value": 0
+        }
+      }
+    ]
+  }
+}

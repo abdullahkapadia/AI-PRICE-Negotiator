@@ -1,0 +1,416 @@
+
+# 🧠 AI Price Negotiation E-Commerce System — Full Architecture
+
+---
+
+# 👥 System Users / Roles
+
+## 🛍️ 1. Customer
+
+People who browse products and negotiate price.
+
+### Customer Features
+
+* Register / Login
+* Browse products
+* View vendor details
+* Negotiate price using AI counter offer
+* Add to cart
+* Place order
+* Order tracking
+* View negotiation history
+* Wishlist
+* Ratings & reviews
+
+---
+
+## 🏪 2. Vendor (Seller)
+
+People who sell products and define negotiation limits.
+
+### Vendor Features
+
+* Register vendor account
+* Wait for admin approval
+* Add / edit / delete products
+* Set negotiation rules
+* View negotiation requests
+* Accept / reject final deals
+* Manage orders
+* Sales analytics
+* Stock management
+
+---
+
+## 🛡️ 3. Admin
+
+Controls platform and verifies vendors.
+
+### Admin Features
+
+* Approve / reject vendor registrations
+* Manage users
+* Manage products
+* View negotiations logs
+* Fraud monitoring
+* Platform analytics
+* Category management
+* Commission settings
+
+---
+
+# 🧾 Core Modules
+
+---
+
+# 📦 Product Management Module
+
+## Product Fields
+
+```
+Product_ID (Primary Key)
+Vendor_ID (Foreign Key)
+Product_Name
+Product_Description
+Category_ID
+Brand
+Original_Price
+Minimum_Negotiation_Price
+Stock_Quantity
+Product_Image
+Product_Status (Active/Inactive)
+Created_Date
+Updated_Date
+```
+
+---
+
+# 👤 Customer Module
+
+## Customer Fields
+
+```
+Customer_ID
+Name
+Email
+Phone_Number
+Password
+Address
+City
+State
+Pincode
+Registration_Date
+Account_Status
+```
+
+---
+
+# 🏪 Vendor Module
+
+## Vendor Fields
+
+```
+Vendor_ID
+Vendor_Name
+Business_Name
+Email
+Phone
+GST_Number
+Business_Address
+Bank_Account_Details
+Approval_Status (Pending/Approved/Rejected)
+Registration_Date
+```
+
+---
+
+# 🛡️ Admin Module
+
+## Admin Fields
+
+```
+Admin_ID
+Admin_Name
+Email
+Password
+Role
+```
+
+---
+
+# 🤖 AI Negotiation Module (Main Innovation)
+
+This is your highlight feature.
+
+---
+
+## Negotiation Flow
+
+1. Customer selects product
+2. Customer enters offered price
+3. AI evaluates offer
+4. AI sends counter offer
+5. Customer accepts / retries
+6. Final price stored
+7. Order created
+
+---
+
+## Negotiation Table
+
+```
+Negotiation_ID
+Product_ID
+Customer_ID
+Vendor_ID
+Original_Price
+Customer_Offer
+AI_Counter_Offer
+Final_Agreed_Price
+Negotiation_Status
+Negotiation_Time
+```
+
+---
+
+# 🧠 AI Negotiation Logic
+
+You can implement using:
+
+### Rule Based AI (Simple Version)
+
+```
+If offer >= 90% → Accept
+If offer between 70-90% → Counter Offer
+If offer < 70% → Reject
+```
+
+---
+
+### Advanced ML Version
+
+Later you can use:
+
+* Customer past buying behaviour
+* Product demand
+* Vendor profit margin
+* Time-based discounts
+* Stock availability
+
+---
+
+# 🛒 Order Management Module
+
+## Order Fields
+
+```
+Order_ID
+Customer_ID
+Vendor_ID
+Product_ID
+Final_Price
+Order_Status
+Tracking_ID
+Order_Date
+Delivery_Date
+Payment_Status
+```
+
+---
+
+# 📦 Order Tracking Module
+
+Tracking ID format example:
+
+```
+ORD00001
+```
+
+Tracking Status:
+
+* Order Confirmed
+* Packed
+* Shipped
+* Out for Delivery
+* Delivered
+
+---
+
+# ⭐ Cart Module
+
+```
+Cart_ID
+Customer_ID
+Product_ID
+Quantity
+Added_Date
+```
+
+---
+
+# ⭐ Wishlist Module
+
+```
+Wishlist_ID
+Customer_ID
+Product_ID
+```
+
+---
+
+# ⭐ Category Module
+
+```
+Category_ID
+Category_Name
+Category_Description
+```
+
+---
+
+# ⭐ Review Module
+
+```
+Review_ID
+Customer_ID
+Product_ID
+Rating
+Review_Text
+Review_Date
+```
+
+---
+
+# 💳 Payment Module
+
+You can simulate or integrate:
+
+* UPI
+* Card Payment
+* COD
+
+```
+Payment_ID
+Order_ID
+Payment_Method
+Transaction_ID
+Payment_Status
+Payment_Date
+```
+
+---
+
+# 🔐 Authentication Module
+
+* Password hashing
+* Session handling
+* Role based access
+
+---
+
+# 📊 Analytics Dashboard
+
+### Vendor Dashboard
+
+* Sales graph
+* Negotiation success rate
+* Top products
+
+### Admin Dashboard
+
+* Total users
+* Total vendors
+* Platform revenue
+* Active negotiations
+
+---
+
+# ⚙️ Tech Stack Recommendation (Best For You)
+
+Since you prefer PHP:
+
+## Backend
+
+* PHP (Laravel recommended OR core PHP)
+
+## Database
+
+* MySQL
+
+## Frontend
+
+* HTML
+* CSS
+* JavaScript
+* Bootstrap
+
+## AI Negotiation
+
+* Python microservice OR PHP rule engine
+
+---
+
+# 🔄 System Workflow
+
+```
+Vendor registers → Admin approves → Vendor adds products → Customer browses → Customer negotiates → AI responds → Deal confirmed → Order placed → Tracking begins
+```
+
+---
+
+# ⭐ Extra Features (To Impress Hackathons)
+
+### 🔥 Smart Features
+
+* Negotiation chatbot UI
+* Real-time price suggestion
+* Vendor dynamic pricing
+* Loyalty discount AI
+* Negotiation timer countdown
+
+---
+
+# 📁 Suggested Folder Structure
+
+```
+/customer
+/vendor
+/admin
+/negotiation_engine
+/api
+/assets
+/database
+```
+
+---
+
+# ⭐ Security Considerations
+
+* SQL Injection prevention
+* Input validation
+* Secure payment simulation
+* Role authentication
+
+---
+
+# ⭐ Future Expansion
+
+* Mobile app version
+* ML based price prediction
+* Chat negotiation interface
+* Multi vendor marketplace
+* Recommendation engine
+
+---
+
+# 🧩 Minimum Viable Version (Start Small)
+
+You should first build:
+
+✅ Customer login
+✅ Vendor approval system
+✅ Product listing
+✅ Simple AI negotiation
+✅ Order placement
+✅ Admin dashboard
+
